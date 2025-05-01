@@ -3,6 +3,7 @@ import "./sidecart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faMinus, faPlus, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 const Cart = ({ onClose,open }) => {
   const cartItems = [
@@ -113,12 +114,12 @@ const Cart = ({ onClose,open }) => {
                 </div>
               </dl>
 
-              <button className="cart-checkout-button">Buy now</button>
+              <Link href="/checkout"  onClick={onClose} className="cart-checkout-button">Buy now</Link>
 
               <div className="cart-continue-shopping">
                 <p>
                   Or{" "}
-                  <button className="cart-continue-shopping-button">
+                  <button onClick={onClose} className="cart-continue-shopping-button">
                     Continue Shopping ←
                   </button>
                 </p>

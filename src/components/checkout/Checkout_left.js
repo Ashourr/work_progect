@@ -7,6 +7,7 @@ import {
   faCreditCard,
 } from "@fortawesome/free-solid-svg-icons";
 import "./checkout.css";
+import Link from "next/link";
 export default function Checkout_left() {
   const [quantity, setQuantity] = useState(1);
   const [formData, setFormData] = useState({
@@ -116,21 +117,10 @@ export default function Checkout_left() {
           ></textarea>
         </div>
 
-        <div className={"priceSummary"}>
-          <div className={"priceRow"}>
-            <dt className={"priceLabel"}>Shipping Cost</dt>
-            <dd className={"priceValue"}>Free Shipping</dd>
-          </div>
-          <div className={"priceRow"}>
-            <dt className={"priceLabel"}>Total</dt>
-            <dd className={"priceValue"}>150 SAR</dd>
-          </div>
-        </div>
-
-        <button type="submit" className={"submitButton"}>
+        <Link href={"/order"}  type="submit" className={"submitButton"}>
           <FontAwesomeIcon icon={faCreditCard} className="buttonIcon" />
           Buy it now
-        </button>
+        </Link>
       </form>
     </div>
   );

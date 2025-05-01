@@ -1,5 +1,6 @@
 .refundpolicy {
   max-width: 88vw;
+  margin-bottom: 50px;
   direction: rtl;
   margin: auto;
 }
@@ -12,6 +13,7 @@
 }
 .refundpolicy ul {
   padding: 20px;
+  margin-bottom: 50px;
 }
 .refundpolicy ul li {
   font-size: 18px;

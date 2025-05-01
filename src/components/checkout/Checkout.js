@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import "./checkout.css";
 import Checkout_left from "./Checkout_left";
 import Checkout_right from "./Checkout_right";

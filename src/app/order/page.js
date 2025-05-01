@@ -1,10 +1,10 @@
-import Checkout from "@/components/checkout/Checkout";
+import Order from "@/components/order/Order";
 import React from "react";
 
 export default function page() {
   return (
     <>
-      <Checkout />
+      <Order />
     </>
   );
 }
